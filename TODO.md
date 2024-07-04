@@ -15,20 +15,20 @@ Todo / 待办事项
 🔥 In Development / 开发中
 --------------------------
 
-- [ ] XXX
-
-- [X] XXX
+- [ ] Improve the overall functionality  
+完善整体功能
 
 📌 In Planning / 计划中
 -----------------------
 
-- [ ] XXX
-
-- [X] XXX
+- [ ] Add a lighting system to the 3D subpackage  
+在 3D 子包中增加光照系统
 
 💡 In Consideration / 考虑中
 ----------------------------
 
-- [ ] XXX
+- [ ] Add Physics engine  
+增加物理引擎
 
-- [X] XXX
+- [ ] Enables 3D subpackages to recognize and recall 3D files in STL or OBJ format  
+让 3D 子包可识别并调用 STL 或 OBJ 格式的 3D 文件
