@@ -8,7 +8,9 @@ import statistics
 import tkinter
 import typing
 
-from ..core import constants, containers
+import tkintertools.core.containers
+
+from . import constants
 
 __all__ = [
     "Canvas",
@@ -26,12 +28,12 @@ __all__ = [
 ]
 
 
-class Canvas(containers.Canvas):
+class Canvas(tkintertools.core.containers.Canvas):
     """Base class of 3D Canvas"""
 
     def __init__(
         self,
-        master: containers.Tk | containers.Canvas,
+        master: tkintertools.core.containers.Tk | tkintertools.core.containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         zoom_item: bool = False,
@@ -39,7 +41,7 @@ class Canvas(containers.Canvas):
         free_anchor: bool = False,
         **kwargs,
     ) -> None:
-        containers.Canvas.__init__(
+        tkintertools.core.containers.Canvas.__init__(
             self, master, expand=expand, zoom_item=zoom_item,
             keep_ratio=keep_ratio, free_anchor=free_anchor, **kwargs)
         self._components: list[Component] = []
@@ -68,7 +70,7 @@ class Space(Canvas):
 
     def __init__(
         self,
-        master: containers.Tk | containers.Canvas,
+        master: tkintertools.core.containers.Tk | tkintertools.core.containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         zoom_item: bool = False,

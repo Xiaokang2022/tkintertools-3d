@@ -1,6 +1,5 @@
 """Standard Geometries"""
 
-
 from . import engine
 
 __all__ = [
@@ -16,7 +15,7 @@ __all__ = [
 
 
 class Cuboid(engine.Geometry):
-    """"""
+    """Cuboid"""
 
     def __init__(
         self,
@@ -64,7 +63,7 @@ class Cuboid(engine.Geometry):
 
 
 class Tetrahedron(engine.Geometry):
-    """"""
+    """Tetrahedron"""
 
     def __init__(
         self,
