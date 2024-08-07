@@ -13,11 +13,12 @@ Changelog / 更新日志
 > * 🟠 **Deprecated / 弃用**
 > * 🟤 **Refactored / 重构**
 
-🔖 `X.X.X.X`
------------------
+🔖 `1.0.0`
+-----------
 
-🕓 *Release Date / 发布日期 : XXXX-XX-XX*
+🕓 *Release Date / 发布日期 : 2024-08-08*
 
-🟢 **Added / 新增**
+🟤 **Refactored / 重构**
 
-- XXX
+- Completed the project detached from `tkintertools` and refactored to be compatible  
+完成了项目从 `tkintertools` 的分离，并重构以兼容

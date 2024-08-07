@@ -1,8 +1,17 @@
 <h1 align="center">tkintertools-3d</h1>
 
-<p align="center">Project detached from tkintertools</p>
+<p align="center">
+<code>tkintertools</code> 对简单 3D 绘图的扩展包
+<br/>
+Extension package for <code>tkintertools</code> to simple 3D drawings
+</p>
 
 <p align="center">
+<a href="https://github.com/Xiaokang2022/tkintertools-3d/releases"><img alt="Version" src="https://img.shields.io/github/v/release/Xiaokang2022/tkintertools-3d?include_prereleases&logo=github&label=Version" title="Latest Version" /></a>
+<a href="https://pypistats.org/packages/tkintertools-3d"><img alt="Downloads" src="https://img.shields.io/pypi/dm/tkintertools-3d?label=Downloads&logo=pypi&logoColor=skyblue" title="Downloads" /></a>
+<a href="https://pepy.tech/project/tkintertools-3d"><img alt="Total Downloads" src="https://img.shields.io/pepy/dt/tkintertools-3d?logo=pypi&logoColor=gold&label=Total%20Downloads" title="Total Downloads" /></a>
+<a href="https://github.com/Xiaokang2022/tkintertools-3d"><img alt="Size" src="https://img.shields.io/github/languages/code-size/Xiaokang2022/tkintertools-3d?label=Size&logo=github" title="Code Size"/></a>
+<br/>
 <a href="https://github.com/Xiaokang2022/tkintertools-3d/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/Xiaokang2022/tkintertools-3d?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
 <a href="https://github.com/Xiaokang2022/tkintertools-3d/forks"><img alt="Forks" src="https://img.shields.io/github/forks/Xiaokang2022/tkintertools-3d?label=Forks&logo=github&style=flat" title="Forks" /></a>
 <a href="https://github.com/Xiaokang2022/tkintertools-3d/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Xiaokang2022/tkintertools-3d?label=Stars&color=gold&logo=github&style=flat" title="Stars" /></a>
@@ -25,4 +34,15 @@
     </a>
 </p>
 
-<p align="center"><img src="https://contrib.rocks/image?repo=Xiaokang2022/tkintertools-3d" alt="Contributors" /></p>
+📦 Installation / 安装
+----------------------
+
+```
+pip install tkintertools-3d
+```
+
+or
+
+```
+pip install tkintertools[extension]==3.0.0rc1
+```

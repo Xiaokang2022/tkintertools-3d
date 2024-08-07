@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tkintertools-3d"
+authors = [{ name = "Xiaokang2022", email = "2951256653@qq.com" }]
+maintainers = [{ name = "Xiaokang2022", email = "2951256653@qq.com" }]
+description = "Extension package for tkintertools to simple 3D drawings"
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.10"
+keywords = ["tkinter", "tkintertools", "3d", "cross-platform"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Natural Language :: Chinese (Simplified)",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = ["tkintertools == 3.0.0rc1"]
+dynamic = ["version"]
+
+[project.urls]
+"Bug tracker" = "https://github.com/Xiaokang2022/tkintertools-3d/issues"
+"Source code" = "https://github.com/Xiaokang2022/tkintertools-3d"
+
+[tool.setuptools.dynamic]
+version = { attr = "tkintertools.three.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["tkintertools*"]
+
+# python -m build
+# python -m twine upload dist/*
