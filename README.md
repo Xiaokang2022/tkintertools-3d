@@ -41,8 +41,5 @@ Extension package for <code>tkintertools</code> to simple 3D drawings
 pip install tkintertools-3d
 ```
 
-or
-
-```
-pip install tkintertools[extension]==3.0.0rc1
-```
+> [!IMPORTANT]  
+> `tkintertools`: https://github.com/Xiaokang2022/tkintertools
