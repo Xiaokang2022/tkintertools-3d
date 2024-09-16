@@ -13,6 +13,16 @@ Changelog / 更新日志
 > * 🟠 **Deprecated / 弃用**
 > * 🟤 **Refactored / 重构**
 
+🔖 `1.0.1`
+-----------
+
+🕓 *Release Date / 发布日期 : 2024-09-16*
+
+🟡 **Changed / 变更**
+
+- Update the version of the `tkintertools` dependency package  
+更新 `tkintertools` 依赖包的版本
+
 🔖 `1.0.0`
 -----------
 
