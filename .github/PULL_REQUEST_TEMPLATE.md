@@ -3,8 +3,8 @@ Thank you so much for your PR!❤️
 非常感谢您的PR！❤️
 -->
 
-📑 PR Summary
---------------
+PR Summary
+----------
 
 <!--
 Please provide at least 1-2 sentences describing the pull request in detail
@@ -17,16 +17,16 @@ Also please summarize the changes in the title, and avoid non-descriptive titles
 还请在标题中概括一下更改的内容，并避免非描述性的标题，比如 “解决问题 #6666”。
 -->
 
-✏️ Extra Information
----------------------
+Extra Information
+-----------------
 
 <!--
 If there is any additional information that needs to be written, please put it here.
 如果有其它额外信息需要写，请放在这里
 -->
 
-☑️ PR Checklist
-----------------
+PR Checklist
+------------
 
 <!--
 Please check that your PR has completed the contents of the following checkboxes
@@ -42,8 +42,8 @@ and mark it with "[ ]" as "[X]".
 新的或更改的代码已测试
 - [ ] When it comes to API modifications, the docstrings of related classes or functions are also modified  
 涉及到 API 修改的，相关类或者函数的文档字符串也跟着修改了
-- [ ] I have read the [contribution guide](../blob/main/CONTRIBUTING.md) and followed all the instructions  
-我已经阅读了[贡献指南](../blob/main/CONTRIBUTING.md)，并按照所有的指示做了
+- [ ] I have read the contribution guide and followed all the instructions  
+我已经阅读了贡献指南，并按照所有的指示做了
 
 <!--
 We understand that PRs can sometimes be overwhelming, especially as the
