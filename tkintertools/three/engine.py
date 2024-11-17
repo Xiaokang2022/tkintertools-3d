@@ -8,9 +8,8 @@ import statistics
 import tkinter
 import typing
 
-import tkintertools.core.containers
-
-from . import constants
+import typing_extensions
+from tkintertools.core import configs, containers
 
 __all__ = [
     "Canvas",
@@ -28,12 +27,12 @@ __all__ = [
 ]
 
 
-class Canvas(tkintertools.core.containers.Canvas):
+class Canvas(containers.Canvas):
     """Base class of 3D Canvas"""
 
     def __init__(
         self,
-        master: tkintertools.core.containers.Tk | tkintertools.core.containers.Canvas,
+        master: containers.Tk | containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         zoom_item: bool = False,
@@ -41,7 +40,7 @@ class Canvas(tkintertools.core.containers.Canvas):
         free_anchor: bool = False,
         **kwargs,
     ) -> None:
-        tkintertools.core.containers.Canvas.__init__(
+        containers.Canvas.__init__(
             self, master, expand=expand, zoom_item=zoom_item,
             keep_ratio=keep_ratio, free_anchor=free_anchor, **kwargs)
         self._components: list[Component] = []
@@ -70,7 +69,7 @@ class Space(Canvas):
 
     def __init__(
         self,
-        master: tkintertools.core.containers.Tk | tkintertools.core.containers.Canvas,
+        master: containers.Tk | containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         zoom_item: bool = False,
@@ -98,14 +97,14 @@ class Space(Canvas):
         else:
             self.bind("<MouseWheel>", self._scale, "+")
 
-    # @typing.override
+    @typing_extensions.override
     def _initialization(self) -> None:
         Canvas._initialization(self)
         # _Widget(self, _SpaceFeature)
         self._origin = Point(self, (0, 0, 0), fill="", outline="")
         self._components.clear()
 
-    # @typing.override
+    @typing_extensions.override
     def _zoom_self(self) -> None:
         Canvas._zoom_self(self)
         for item in self._components:
@@ -128,11 +127,11 @@ class Space(Canvas):
         if press is True:  # Press
             _cache[:] = [event.x, event.y]
             self.configure(cursor="fleur")
-            self._trigger_config.lock()
+            self.trigger_config.lock()
             return
 
         elif press is False:  # Release
-            self._trigger_config.unlock()
+            self.trigger_config.unlock()
             self.configure(cursor="arrow")
             return
 
@@ -161,11 +160,11 @@ class Space(Canvas):
         if press is True:  # Press
             _cache[:] = [event.x, event.y]
             self.configure(cursor="fleur")
-            self._trigger_config.lock()
+            self.trigger_config.lock()
             return
 
         elif press is False:  # Release
-            self._trigger_config.unlock()
+            self.trigger_config.unlock()
             self.configure(cursor="arrow")
             return
 
@@ -393,7 +392,7 @@ class Point(Component):
         outline="#000000",  # type: str
         markuptext="",  # type: str
         markupdelta=(0, 0),  # type: tuple[float, float]
-        markupfont=(constants.FONT, constants.SIZE),
+        markupfont=(configs.Font.family, configs.Font.size),
         # type: tuple[str, int, str]
         markupfill="#000000",  # type: str
         markupjustify="center",  # type: str
@@ -530,7 +529,7 @@ class Text3D(Component):
         text="",  # type: str
         *,
         # type: tuple[str, int, str]
-        font=(constants.FONT, constants.SIZE),
+        font=(configs.Font.family, configs.Font.size),
         justify="center",  # type: typing.Literal["center", "left", "right"]
         fill="#000000",  # type: str
     ):  # type: (...) -> None

@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
-dependencies = ["tkintertools>=3.0.0rc1"]
+dependencies = ["tkintertools>=3.0.0rc4", "typing_extensions"]
 dynamic = ["version"]
 
 [project.urls]

@@ -1,10 +1,6 @@
 <h1 align="center">tkintertools-3d</h1>
 
-<p align="center">
-<code>tkintertools</code> 对简单 3D 绘图的扩展包
-<br/>
-Extension package for <code>tkintertools</code> to simple 3D drawings
-</p>
+<p align="center">Extension package for <code>tkintertools</code> to simple 3D drawings</p>
 
 <p align="center">
 <a href="https://github.com/Xiaokang2022/tkintertools-3d/releases"><img alt="Version" src="https://img.shields.io/github/v/release/Xiaokang2022/tkintertools-3d?include_prereleases&logo=github&label=Version" title="Latest Version" /></a>
@@ -34,10 +30,10 @@ Extension package for <code>tkintertools</code> to simple 3D drawings
     </a>
 </p>
 
-📦 Installation / 安装
-----------------------
+📦 Installation
+----------------
 
-```
+```bash
 pip install tkintertools-3d
 ```
 
