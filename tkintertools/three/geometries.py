@@ -1,6 +1,6 @@
 """Standard Geometries"""
 
-from . import engine
+from __future__ import annotations
 
 __all__ = [
     "Cuboid",
@@ -12,6 +12,8 @@ __all__ = [
     # "Pyramid",
     # "RegularPolyhedron",
 ]
+
+from . import engine
 
 
 class Cuboid(engine.Geometry):

@@ -1,15 +1,6 @@
 """Core codes of 3D"""
 
-import abc
-import array
-import math
-import platform
-import statistics
-import tkinter
-import typing
-
-import typing_extensions
-from tkintertools.core import configs, containers
+from __future__ import annotations
 
 __all__ = [
     "Canvas",
@@ -26,34 +17,44 @@ __all__ = [
     "Geometry",
 ]
 
+import abc
+import array
+import math
+import statistics
+import tkinter
+import typing
+
+import typing_extensions
+from tkintertools.core import configs, containers
+
 
 class Canvas(containers.Canvas):
     """Base class of 3D Canvas"""
 
     def __init__(
         self,
-        master: containers.Tk | containers.Canvas,
+        master: containers.Tk | containers.Toplevel | containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
-        zoom_item: bool = False,
+        auto_zoom: bool = False,
         keep_ratio: typing.Literal["min", "max"] | None = None,
         free_anchor: bool = False,
         **kwargs,
     ) -> None:
         containers.Canvas.__init__(
-            self, master, expand=expand, zoom_item=zoom_item,
+            self, master, expand=expand, auto_zoom=auto_zoom,
             keep_ratio=keep_ratio, free_anchor=free_anchor, **kwargs)
         self._components: list[Component] = []
         self._geometries: list[Geometry] = []
         self._distance: int = 1000
 
     @property
-    def components(self) -> tuple["Component", ...]:
+    def components(self) -> tuple[Component, ...]:
         """Return all `Component` of this Canvas"""
         return tuple(self._components)
 
     @property
-    def geometries(self) -> tuple["Geometry", ...]:
+    def geometries(self) -> tuple[Geometry, ...]:
         """Return all `Geometry` of this Canvas"""
         return tuple(self._geometries)
 
@@ -69,16 +70,16 @@ class Space(Canvas):
 
     def __init__(
         self,
-        master: containers.Tk | containers.Canvas,
+        master: containers.Tk | containers.Toplevel | containers.Canvas,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
-        zoom_item: bool = False,
+        auto_zoom: bool = False,
         keep_ratio: typing.Literal["min", "max"] | None = None,
         free_anchor: bool = False,
         **kwargs,
     ) -> None:
         Canvas.__init__(
-            self, master, expand=expand, zoom_item=zoom_item,
+            self, master, expand=expand, auto_zoom=auto_zoom,
             keep_ratio=keep_ratio, free_anchor=free_anchor, **kwargs)
 
         self.bind("<B3-Motion>", self._translate, "+")
@@ -91,11 +92,9 @@ class Space(Canvas):
         self.bind("<ButtonRelease-2>",
                   lambda event: self._rotate(event, False), "+")
 
-        if platform.system() == "Linux":
-            self.bind("<Button-4>", lambda event: self._scale(event, True), "+")
-            self.bind("<Button-5>", lambda event: self._scale(event, False), "+")
-        else:
-            self.bind("<MouseWheel>", self._scale, "+")
+        self.bind("<Button-4>", lambda event: self._scale(event, True), "+")
+        self.bind("<Button-5>", lambda event: self._scale(event, False), "+")
+        self.bind("<MouseWheel>", self._scale, "+")
 
     @typing_extensions.override
     def _initialization(self) -> None:
@@ -140,7 +139,7 @@ class Space(Canvas):
 
         for item in self._components + [self._origin]:
             item.translate(
-                0, dx*self._initial_size[0]/self._size[0], -dy*self._initial_size[1]/self._size[1])
+                0, dx*self.init_size[0]/self._size[0], -dy*self.init_size[1]/self._size[1])
             item.update()
         self.space_sort()
 
@@ -370,7 +369,7 @@ class Component(abc.ABC):
         """
         lst = [project(point, distance) for point in self.coordinates]
         if canvas is not None:
-            lst = [(pos[0] + canvas._initial_size[0]/2, canvas._initial_size[1]/2 - pos[1])
+            lst = [(pos[0] + canvas.init_size[0]/2, canvas.init_size[1]/2 - pos[1])
                    for pos in lst]
         return lst
 
@@ -528,8 +527,7 @@ class Text3D(Component):
         coords,  # type: tuple[float, float, float]
         text="",  # type: str
         *,
-        # type: tuple[str, int, str]
-        font=(configs.Font.family, configs.Font.size),
+        font=(configs.Font.family, configs.Font.size),  # type: tuple[str, int, str]
         justify="center",  # type: typing.Literal["center", "left", "right"]
         fill="#000000",  # type: str
     ):  # type: (...) -> None

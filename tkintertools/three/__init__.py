@@ -33,5 +33,5 @@ Provides:
 from .engine import *
 from .geometries import *
 
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __author__ = "Xiaokang2022 <2951256653@qq.com>"
