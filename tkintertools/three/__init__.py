@@ -1,5 +1,5 @@
 """
-Extension package for tkintertools to simple 3D drawings
+Extension package of tkintertools for simple 3D drawings
 
 Provides:
 

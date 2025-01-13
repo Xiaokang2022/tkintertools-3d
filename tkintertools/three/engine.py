@@ -17,7 +17,6 @@ __all__ = [
     "Geometry",
 ]
 
-import abc
 import array
 import math
 import statistics
@@ -33,7 +32,7 @@ class Canvas(containers.Canvas):
 
     def __init__(
         self,
-        master: containers.Tk | containers.Toplevel | containers.Canvas,
+        master: containers.Tk | containers.Toplevel | containers.Canvas | None = None,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         auto_zoom: bool = False,
@@ -70,7 +69,7 @@ class Space(Canvas):
 
     def __init__(
         self,
-        master: containers.Tk | containers.Toplevel | containers.Canvas,
+        master: containers.Tk | containers.Toplevel | containers.Canvas | None = None,
         *,
         expand: typing.Literal["", "x", "y", "xy"] = "xy",
         auto_zoom: bool = False,
@@ -129,7 +128,7 @@ class Space(Canvas):
             self.trigger_config.lock()
             return
 
-        elif press is False:  # Release
+        if press is False:  # Release
             self.trigger_config.unlock()
             self.configure(cursor="arrow")
             return
@@ -162,7 +161,7 @@ class Space(Canvas):
             self.trigger_config.lock()
             return
 
-        elif press is False:  # Release
+        if press is False:  # Release
             self.trigger_config.unlock()
             self.configure(cursor="arrow")
             return
@@ -292,7 +291,7 @@ def project(coordinate, distance):
     return coordinate[1]*k, coordinate[2]*k
 
 
-class Component(abc.ABC):
+class Component:
     """3D 对象基类"""
 
     def __init__(self, *coordinates):
@@ -329,7 +328,7 @@ class Component(abc.ABC):
         * `center`: 旋转中心，默认为原点
         * `axis`: 旋转轴线，无默认值
         """
-        for i, coordinate in enumerate(self.coordinates):
+        for _, coordinate in enumerate(self.coordinates):
             # if dx != 0:
             #     coordinate = q_rotate(coordinate, (1, 0, 0), dx)
             # if dy != 0:
@@ -373,8 +372,8 @@ class Component(abc.ABC):
                    for pos in lst]
         return lst
 
-    @abc.abstractmethod
-    def update(self) -> None: ...
+    def update(self) -> None:
+        """Update"""
 
 
 class Point(Component):
