@@ -102,9 +102,9 @@ for i in range(26):
     φ = i/26 * math.tau
     c1 = r * math.sin(φ)
     c2 = r * math.cos(φ)
-    ring['x'].append(three.Text3D(space, (0, c1, c2), text=t, fill='#FF0000'))
-    ring['y'].append(three.Text3D(space, (c1, 0, c2), text=t, fill='#00FF00'))
-    ring['z'].append(three.Text3D(space, (c1, c2, 0), text=t, fill='#0000FF'))
+    ring['x'].append(three.Text3D(space, (0, c1, c2), text=t, fill='red'))
+    ring['y'].append(three.Text3D(space, (c1, 0, c2), text=t, fill='forestgreen'))
+    ring['z'].append(three.Text3D(space, (c1, c2, 0), text=t, fill='royalblue'))
 
 for i in range(10):
     t = str(i)
