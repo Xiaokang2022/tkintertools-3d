@@ -3,14 +3,14 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tkintertools-3d"
+name = "maliang-three"
 authors = [{ name = "Xiaokang2022", email = "2951256653@qq.com" }]
 maintainers = [{ name = "Xiaokang2022", email = "2951256653@qq.com" }]
-description = "Extension package for tkintertools to simple 3D drawings"
+description = "Extension package for maliang to simple 3D drawings"
 readme = "README.md"
 license = { text = "MIT License" }
 requires-python = ">=3.10"
-keywords = ["tkinter", "tkintertools", "3d", "cross-platform"]
+keywords = ["tkinter", "maliang", "3d", "cross-platform"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -20,18 +20,18 @@ classifiers = [
     "Intended Audience :: Developers",
     "Typing :: Typed",
 ]
-dependencies = ["tkintertools>=3.0.0rc6", "typing-extensions"]
+dependencies = ["maliang>=3.0.0rc6", "typing-extensions"]
 dynamic = ["version"]
 
 [project.urls]
-"Bug tracker" = "https://github.com/Xiaokang2022/tkintertools-3d/issues"
-"Source code" = "https://github.com/Xiaokang2022/tkintertools-3d"
+"Bug tracker" = "https://github.com/Xiaokang2022/maliang-three/issues"
+"Source code" = "https://github.com/Xiaokang2022/maliang-three"
 
 [tool.setuptools.dynamic]
-version = { attr = "tkintertools.three.__version__" }
+version = { attr = "maliang.three.__version__" }
 
 [tool.setuptools.packages.find]
-include = ["tkintertools*"]
+include = ["maliang*"]
 
 [tool.pylint]
 output-format = "colorized"

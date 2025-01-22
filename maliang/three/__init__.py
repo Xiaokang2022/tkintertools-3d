@@ -1,5 +1,5 @@
 """
-Extension package of tkintertools for simple 3D drawings
+Extension package of `maliang` for simple 3D drawings
 
 Provides:
 

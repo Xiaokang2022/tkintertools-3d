@@ -1,33 +1,33 @@
-<h1 align="center">tkintertools-3d</h1>
+<h1 align="center">maliang-three</h1>
 
-<p align="center"><a title="Official Website" href="https://xiaokang2022.github.io/tkintertools/">https://xiaokang2022.github.io/tkintertools/</a></p>
+<p align="center"><a title="Official Website" href="https://xiaokang2022.github.io/maliang/">https://xiaokang2022.github.io/maliang/</a></p>
 
-<p align="center">Extension package of <code>tkintertools</code> for simple 3D drawings</p>
+<p align="center">Extension package of <code>maliang</code> for simple 3D drawings</p>
 
 <p align="center">
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/releases"><img alt="Version" src="https://img.shields.io/github/v/release/Xiaokang2022/tkintertools-3d?include_prereleases&logo=github&label=Version" title="Latest Version" /></a>
-<a href="https://pypistats.org/packages/tkintertools-3d"><img alt="Downloads" src="https://img.shields.io/pypi/dm/tkintertools-3d?label=Downloads&logo=pypi&logoColor=skyblue" title="Downloads" /></a>
-<a href="https://pepy.tech/project/tkintertools-3d"><img alt="Total Downloads" src="https://img.shields.io/pepy/dt/tkintertools-3d?logo=pypi&logoColor=gold&label=Total%20Downloads" title="Total Downloads" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d"><img alt="Size" src="https://img.shields.io/github/languages/code-size/Xiaokang2022/tkintertools-3d?label=Size&logo=github" title="Code Size"/></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/releases"><img alt="Version" src="https://img.shields.io/github/v/release/Xiaokang2022/maliang-three?include_prereleases&logo=github&label=Version" title="Latest Version" /></a>
+<a href="https://pypistats.org/packages/maliang-three"><img alt="Downloads" src="https://img.shields.io/pypi/dm/maliang-three?label=Downloads&logo=pypi&logoColor=skyblue" title="Downloads" /></a>
+<a href="https://pepy.tech/project/maliang-three"><img alt="Total Downloads" src="https://img.shields.io/pepy/dt/maliang-three?logo=pypi&logoColor=gold&label=Total%20Downloads" title="Total Downloads" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three"><img alt="Size" src="https://img.shields.io/github/languages/code-size/Xiaokang2022/maliang-three?label=Size&logo=github" title="Code Size"/></a>
 <br/>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/Xiaokang2022/tkintertools-3d?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/forks"><img alt="Forks" src="https://img.shields.io/github/forks/Xiaokang2022/tkintertools-3d?label=Forks&logo=github&style=flat" title="Forks" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Xiaokang2022/tkintertools-3d?label=Stars&color=gold&logo=github&style=flat" title="Stars" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/issues"><img alt="Issues" src="https://img.shields.io/github/issues/Xiaokang2022/tkintertools-3d?label=Issues&logo=github" title="Issues" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/Xiaokang2022/tkintertools-3d?label=Pull%20Requests&logo=github" title="Pull Requests" /></a>
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/Xiaokang2022/tkintertools-3d?label=Discussions&logo=github" title="Discussions" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/watchers"><img alt="Watchers" src="https://img.shields.io/github/watchers/Xiaokang2022/maliang-three?label=Watchers&logo=github&style=flat" title="Watchers" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/forks"><img alt="Forks" src="https://img.shields.io/github/forks/Xiaokang2022/maliang-three?label=Forks&logo=github&style=flat" title="Forks" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Xiaokang2022/maliang-three?label=Stars&color=gold&logo=github&style=flat" title="Stars" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/issues"><img alt="Issues" src="https://img.shields.io/github/issues/Xiaokang2022/maliang-three?label=Issues&logo=github" title="Issues" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/pulls"><img alt="Pull Requests" src="https://img.shields.io/github/issues-pr/Xiaokang2022/maliang-three?label=Pull%20Requests&logo=github" title="Pull Requests" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/Xiaokang2022/maliang-three?label=Discussions&logo=github" title="Discussions" /></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/Xiaokang2022/tkintertools-3d/pulse"><img alt="Insights" src="https://repobeats.axiom.co/api/embed/bdabcdebf74f33dcec27065e08f54c8e2d58a4d0.svg" /></a>
+<a href="https://github.com/Xiaokang2022/maliang-three/pulse"><img alt="Insights" src="https://repobeats.axiom.co/api/embed/764fee8a54207889b8f6faeade4bf371b06ec71f.svg" /></a>
 </p>
 
 <p align="center">
-    <a href="https://star-history.com/#Xiaokang2022/tkintertools-3d&Date">
+    <a href="https://star-history.com/#Xiaokang2022/maliang-three&Date">
         <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Xiaokang2022/tkintertools-3d&type=Date&theme=dark" />
-            <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Xiaokang2022/tkintertools-3d&type=Date" />
-            <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Xiaokang2022/tkintertools-3d&type=Date" />
+            <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Xiaokang2022/maliang-three&type=Date&theme=dark" />
+            <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Xiaokang2022/maliang-three&type=Date" />
+            <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Xiaokang2022/maliang-three&type=Date" />
         </picture>
     </a>
 </p>
@@ -36,7 +36,7 @@
 ----------------
 
 ```bash
-pip install tkintertools-3d
+pip install maliang-three
 ```
 
 ### 👀 Preview
@@ -48,10 +48,10 @@ import itertools
 import math
 import statistics
 
-import tkintertools as tkt
-from tkintertools import theme, three
+import maliang
+from maliang import theme, three
 
-tk = tkt.Tk(title="tkintertools-3d")
+root = maliang.Tk(title="maliang-three")
 space = three.Space(auto_zoom=True, free_anchor=True, keep_ratio="min")
 space.light.update(bg="white")
 space.dark.update(bg="black")
@@ -132,9 +132,9 @@ def text_animation() -> None:
         obj3D.rotate(0, -0.01, 0.01, center=O.center())
         obj3D.update()
     space.space_sort()
-    tk.after(10, text_animation)
+    root.after(10, text_animation)
 
 
 text_animation()
-tk.mainloop()
+root.mainloop()
 ```

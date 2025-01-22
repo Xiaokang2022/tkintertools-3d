@@ -24,7 +24,7 @@ import tkinter
 import typing
 
 import typing_extensions
-from tkintertools.core import configs, containers
+from maliang.core import configs, containers
 
 
 class Canvas(containers.Canvas):
